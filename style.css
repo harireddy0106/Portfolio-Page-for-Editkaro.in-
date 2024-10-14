@@ -702,8 +702,17 @@ footer {
 /* Base Responsive Styles */
 /* Responsive Styles for screens up to 1200px */
 @media screen and (max-width: 1200px) {
+  body {
+    font-size: 110%; /* Increase base font size */
+  }
+
   nav {
     padding: 15px 50px; /* Padding for navigation */
+  }
+
+  .btn {
+    padding: 10px 20px; /* Smaller button padding */
+    font-size: 15px; /* Smaller button font size */
   }
 
   .hero {
@@ -718,19 +727,21 @@ footer {
     max-width: 90%; /* Increase width for smaller screens */
     padding: 0 20px; /* Add padding */
     text-align: center; /* Center text on smaller screens */
+    font-size: 60px; /* Increase font size */
+    line-height: 50px;
   }
 
   .hero h1 {
     font-size: 50px; /* Adjust font size */
-    line-height: 60px; /* Adjust line height */
+    line-height: 50px; /* Adjust line height */
   }
 
   .hero p {
-    font-size: 16px; /* Adjust paragraph font size */
+    font-size: 17px; /* Adjust paragraph font size */
   }
 
   .hero .title {
-    font-size: 20px; /* Adjust title size */
+    font-size: 25px; /* Adjust title size */
   }
 
   .hero .contact-info {
@@ -738,6 +749,7 @@ footer {
     max-height: 300px; /* Set max height */
     align-items: center; /* Center items */
     margin-top: 20px; /* Space above contact info */
+    font-size: 60px; /* Increase font size */
   }
 
   .about-container {
@@ -758,16 +770,16 @@ footer {
 
   .about-text .btn {
     padding: 10px 20px; /* Smaller button padding */
-    font-size: 14px; /* Smaller button font size */
+    font-size: 15px; /* Smaller button font size */
   }
 
   .about h2 {
-    font-size: 28px; /* Smaller heading */
+    font-size: 30px; /* Smaller heading */
     margin-bottom: 20px; /* Space below heading */
   }
 
   .about-text p {
-    font-size: 14px; /* Smaller paragraph font size */
+    font-size: 16px; /* Smaller paragraph font size */
   }
 
   .services-container {
@@ -808,6 +820,10 @@ footer {
 
 /* Responsive Styles for screens up to 768px */
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 120%; /* Further increase base font size */
+  }
+
   nav ul {
     display: none; /* Hide navigation links */
   }
@@ -822,7 +838,7 @@ footer {
   }
 
   .hamburger ion-icon {
-    font-size: 30px; /* Hamburger icon size */
+    font-size: 35px; /* Hamburger icon size */
     color: #FB8500; /* Color for hamburger icon */
   }
 
@@ -855,7 +871,7 @@ footer {
 
   .mobile-menu ul li a {
     color: #FB8500; /* Link color */
-    font-size: 18px; /* Link font size */
+    font-size: 20px; /* Link font size */
     transition: color 0.3s ease; /* Smooth color transition */
   }
 
@@ -869,7 +885,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 40px; /* Smaller heading */
+    font-size: 45px; /* Smaller heading */
     line-height: 50px; /* Adjust line height */
   }
 
@@ -885,6 +901,14 @@ footer {
     width: 100%; /* Full width */
     padding: 15px; /* Reduce padding */
     max-height: 300px; /* Set max height */
+  }
+
+  .about h2 {
+    font-size: 30px; /* Adjust heading size */
+  }
+
+  .about-text p {
+    font-size: 16px; /* Increase paragraph size */
   }
 
   .about-container {
@@ -907,5 +931,40 @@ footer {
 
   .hamburger {
     display: block; /* Show hamburger on mobile */
+  }
+}
+
+/* Responsive Styles for screens up to 480px */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 130%; /* Further increase base font size */
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger ion-icon {
+    font-size: 35px; /* Hamburger icon size */
+  }
+
+  .hero h1 {
+    font-size: 50px; /* Increase heading size */
+    line-height: 60px;
+  }
+
+  .hero p {
+    font-size: 20px; /* Adjust paragraph size */
+  }
+
+  .about h2 {
+    font-size: 35px; /* Increase heading size */
+  }
+
+  .portfolio-item,
+  .service,
+  .contact-form {
+    width: 90%; /* Full width for content */
+    font-size: 16px;
   }
 }
